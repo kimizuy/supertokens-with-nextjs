@@ -21,6 +21,8 @@ export default function Home() {
     }
   }, [hasSession, setHasSession])
 
+  if (!hasSession) return null
+
   return (
     <div className={styles.container}>
       <Head>
